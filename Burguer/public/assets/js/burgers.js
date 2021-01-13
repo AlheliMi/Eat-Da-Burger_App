@@ -14,7 +14,7 @@ $(function() {
       data: newDevouredState
     }).then(
       function() {
-        console.log("changed sleep to", newSleep);
+        console.log("changed Devored to", newDevoured);
         // Reload the page to get the updated list
         location.reload();
       }
@@ -25,33 +25,33 @@ $(function() {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
-    var newBurguer = {
+    var newBurger = {
       name: $("#ca").val().trim(),
-      devoured: $("[name=devoured]:checked").val().trim()
+      devoured: $("[burger_name=devoured]:checked").val().trim()
     };
 
     // Send the POST request.
-    $.ajax("/api/burguers", {
+    $.ajax("/api/burgers", {
       type: "POST",
-      data: newCat
+      data: newBurger
     }).then(
       function() {
-        console.log("created new delicious burguer!!");
+        console.log("created new delicious Burger!!");
         // Reload the page to get the updated list
         location.reload();
       }
     );
   });
 
-  $(".delete-cat").on("click", function(event) {
+  $(".delete-burger").on("click", function(event) {
     var id = $(this).data("id");
 
     // Send the DELETE request.
-    $.ajax("/api/burguers/" + id, {
+    $.ajax("/api/burgers/" + id, {
       type: "DELETE"
     }).then(
       function() {
-        console.log("deleted burguer", id);
+        console.log("deleted Burger", id);
         // Reload the page to get the updated list
         location.reload();
       }

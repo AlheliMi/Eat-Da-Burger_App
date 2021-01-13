@@ -1,7 +1,7 @@
 // Import the ORM to create functions that will interact with the database.
 var orm = require("../config/orm.js");
 
-var burguer = {
+var burger = {
   all: function(cb) {
     orm.all("", function(res) {
       cb(res);
@@ -26,4 +26,4 @@ var burguer = {
 };
 
 // Export the database functions for the controller (burguerController.js).
-module.exports = burguer;
+module.exports = burger;
