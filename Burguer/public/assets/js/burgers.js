@@ -14,7 +14,7 @@ $(function() {
       data: newDevouredState
     }).then(
       function() {
-        console.log("changed Devored to", newDevoured);
+        console.log("changed Devoured to", newDevoured);
         // Reload the page to get the updated list
         location.reload();
       }
@@ -36,7 +36,7 @@ $(function() {
       data: newBurger
     }).then(
       function() {
-        console.log("created new delicious Burger!!");
+        console.log("created new Delicious Burger!!");
         // Reload the page to get the updated list
         location.reload();
       }
