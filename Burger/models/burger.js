@@ -13,7 +13,7 @@ var burger = {
       cb(res);
     });
   },
-  update: function(burgerId, cb) {
+  update: function(body, burgerId, cb) {
     orm.update("burger", "devoured", burgerId, function(res) {
       cb(res);
     });
