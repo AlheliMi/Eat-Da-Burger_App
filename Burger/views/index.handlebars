@@ -1,38 +1,55 @@
 <h1>BURGERS!</h1>
 
-<h2>BURGERS TO DEVOUR!</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/unless}}
-  {{/each}}
-</ul>
 
-<h2>BURGERS DEVOURED!!!</h2>
+<div class="flexbox-container">
 
-<ul>
-  {{#each burgers}}
+ 
+  <div class="flexbox-item-1">
+     <h3>BURGERS TO DEVOUR!</h3>
+     <img src="">
+    <ul id="uneaten">
+       {{#each burger}}
+      {{#unless devoured}}
+      {{> burger/burger-block devoured=false}}
+      {{/unless}}
+      {{/each}}
+    </ul>
+  </div>
+
+
+
+<div class="flexbox-item-2">
+  <h2>BURGERS DEVOURED!!!</h2>
+  <img src="">
+<ul id="eaten">
+  {{#each burger}}
     {{#if devoured}}
-      {{> burgers/burger-block devoured=true}}
+      {{> burger/burger-block devoured=true}}
     {{/if}}
   {{/each}}
 </ul>
+</div>
 
-<h2>Add A NEW BURGER</h2>
-<form class="create-form">
 
-  <div class="form-group">
-    <label for="ca">Burger Name: </label>
-    <input type="text" id="ca" name="burger_name">
-  </div>
+<div class="flex-box-item-3">
+  <h2>Add A NEW BURGER</h2>
+  <img src="">
+  <form class="create-form">
+    <label for="newBurger">Burger Name: </label>
+    <input type="text" id="newBurger" name="burger_name">
+    <div class="flexbox-conteiner">
+       <button type="submit" id="burgerBtn">Add Burger</button>
+    </div>
+   </form>
+</div>
 
-  <div class="form-group">
+</div>
+
+{{!--   <div class="form-group">
     <label for="devoured">Eating???</label><br>
-    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+    <input type="radio" name="devoured" value="1"> Devoured!<br>
     <input type="radio" name="toDevour" value="0"> To Devour
-  </div>
+  </div> --}}
 
-  <button type="submit">Add Burger</button>
-</form>
+ 

@@ -1,11 +1,11 @@
 body{
-  background-image: url("burguer.jpeg");
+  background-image: url("https://images8.alphacoders.com/881/thumb-1920-881437.jpg");
 }
 
 li {
   padding: 5px;
   margin: 5px;
-  background-image: url("burguer.jpeg");
+  background: rgb(237, 215, 247);
 }
 
 .label {
@@ -15,7 +15,7 @@ li {
 .create-update-form {
   padding: 5px;
   margin: 5px;
-  background: aqua;
+  background: rgb(197, 187, 240);
 }
 
 .form-group {
