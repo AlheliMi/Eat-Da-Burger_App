@@ -24,6 +24,10 @@ body{
   color: rgb(197, 110, 70);
 }
 
+h2{
+  color:  rgb(245, 211, 192);
+}
+
 li {
   padding: 12px;
   margin: 5px;
@@ -31,6 +35,7 @@ li {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: rgb(250, 180, 122);
   opacity: .7;
+  color: #000;
 }
 
 .label {
@@ -40,6 +45,10 @@ li {
 .create-form {
 padding-top: 50px;
 padding-left: 50px;
+color:  rgb(245, 211, 192);
+font-size: x-large;
+font-style: italic;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .create-update-form {
