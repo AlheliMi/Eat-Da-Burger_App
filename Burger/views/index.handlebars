@@ -1,12 +1,23 @@
-<h1>BURGERS!</h1>
+<div class="jumbotron jumbotron-fluid text-center">
+  <div class="container">
+    <h1>Alhe´s Burgers</h1>
+    <p>Try it yourself!!!</p>
+  </div>
+</div>
 
-
+<div class="container text-center mainhead">
+  <div class="row">
+     <h1> CHOOSE OR CREATE YOUR BURGERS! <br>
+       <small class="text"> Wich one(s) of this delicious burgers are you going to devour!!!</small>
+     </h1>
+  </div>
+</div>
 
 <div class="flexbox-container container">
 <div class="row">
  
   <div class="flexbox-item-1 col-sm">
-     <h3>BURGERS TO DEVOUR!</h3>
+     <h2 class="text-center">BURGERS TO DEVOUR!</h2>
      <img src="">
     <ul id="uneaten">
        {{#each burger}}
@@ -19,7 +30,7 @@
 
 
 <div class="flexbox-item-2 col-sm">
-  <h2>BURGERS DEVOURED!!!</h2>
+  <h2 class="text-center">BURGERS DEVOURED!!!</h2>
   <img src="">
 <ul id="eaten">
   {{#each burger}}
@@ -31,14 +42,15 @@
 </div>
 
 
-<div class="flex-box-item-3 col-sm">
-  <h2>Add A NEW BURGER</h2>
+<div class="flex-box-item-3 col-sm justify-content-center align-items-center">
+  <h2 class="text-center">Add A NEW BURGER</h2>
   <img src="">
   <form class="create-form">
     <label for="newBurger"> Burger Name: </label>
     <input type="text" id="newBurger" name="burger_name">
-    <div class="flexbox-conteiner">
-       <button type="submit" id="burgerBtn">Add Burger</button>
+    <br>
+    <div class="flexbox-conteiner boton">
+       <button class="myButton" type="submit" id="burgerBtn">Add Burger</button>
     </div>
    </form>
 </div>
